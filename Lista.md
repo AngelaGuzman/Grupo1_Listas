@@ -2,7 +2,7 @@
 Primer Seminario de Est. de bases de datos UAPA
 using System;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
+
 
 namespace lista_numeros
 {
