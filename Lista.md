@@ -44,6 +44,25 @@ namespace lista_numeros
 
             Console.WriteLine("\nLista actualizada\n");
             for (int x = 0; x < listadenumeros.Count; x++) Console.WriteLine(listadenumeros[x]);
+            
+            
+               //Buscar elementos en una lista (Angela Guzman)
+            Console.WriteLine("Introduce el elemnto que deseas buscar en la lista");
+            bool Busqueda = listadenumeros.Contains(int.Parse(Console.ReadLine()));
+            if (Busqueda == true) Console.WriteLine("El elemento se encuentra en la lista");
+            else Console.WriteLine("El elemento no se encuentra en la lista actual");
+            Console.ReadKey();
+
+            //Eliminar el primer elemento de una lista(Angela Guzman)
+
+            listadenumeros.RemoveAt(0);
+            Console.Clear();//Limpiar la pantalla
+            Console.WriteLine("\nNueva lista actualizada");
+            foreach (int lista_numeros in listadenumeros)
+            {
+                Console.WriteLine(lista_numeros);
+
+            }
 
             Console.ReadKey();
         }
